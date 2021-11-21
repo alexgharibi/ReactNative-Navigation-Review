@@ -115,7 +115,11 @@ const FilterNavigator = () => {
             headerTintColor:
               Platform.OS === "android" ? "white" : colors.primaryColor,
             headerRight: () => (
-              <Button onPress={() => {}} title="Save" color="black" />
+              <Button
+                onPress={navData.route.params.save}
+                title="Save"
+                color="black"
+              />
             ),
           };
         }}
